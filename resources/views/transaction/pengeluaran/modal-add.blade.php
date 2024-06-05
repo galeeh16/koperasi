@@ -20,7 +20,7 @@
             <x-input-select id="dari_akun" name="dari_akun" data-placeholder="Pilih Akun" data-minimum-results-for-search="-1">
                 <option value=""></option>
                 @foreach ($jenis_akun as $akun)
-                    <option value="{{ $akun->id }}">{{ $akun->akun }}</option>
+                    <option value="{{ $akun->id }}">{{ $akun->nama_akun }}</option>
                 @endforeach
             </x-input-select>
         </div>
