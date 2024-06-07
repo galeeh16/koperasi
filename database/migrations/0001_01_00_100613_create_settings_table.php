@@ -13,11 +13,14 @@ return new class extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->float('persen_anggota')->default(0);
-            $table->float('persen_non_anggota')->default(0);
-            $table->float('pph')->default(0);
-            $table->float('ppn')->default(0);
-            $table->timestamps();
+            $table->string('key');
+            $table->string('value');
+
+            // $table->float('persen_anggota')->default(0);
+            // $table->float('persen_non_anggota')->default(0);
+            // $table->float('pph')->default(0);
+            // $table->float('ppn')->default(0);
+            // $table->timestamps();
         });
     }
 

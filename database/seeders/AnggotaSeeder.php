@@ -37,7 +37,7 @@ class AnggotaSeeder extends Seeder
                 'aktif_keanggotaan' => 'Y',
                 'status_peminjaman' => 'Y',
                 'gaji' => 100_000_000,
-                'setting_id' => 1,
+                // 'setting_id' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],

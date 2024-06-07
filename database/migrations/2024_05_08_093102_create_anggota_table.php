@@ -36,11 +36,11 @@ return new class extends Migration
             // $table->datetime('tanggal_registrasi');
             $table->enum('aktif_keanggotaan', ['Y', 'N'])->default('N');
             $table->enum('status_peminjaman', ['Y', 'N'])->default('N');
-            $table->unsignedBigInteger('setting_id')->nullable();
+            // $table->unsignedBigInteger('setting_id')->nullable();
 
             $table->timestamps();
 
-            $table->foreign('setting_id')->references('id')->on('settings');
+            // $table->foreign('setting_id')->references('id')->on('settings');
         });
     }
 

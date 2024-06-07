@@ -12,11 +12,13 @@ class SettingSeeder extends Seeder
      */
     public function run(): void
     {
-        Setting::query()->create([
-            'persen_anggota' => 5.0,
-            'persen_non_anggota' => 0,
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
-        ]);
+        $records = [
+            ['key' => 'persen_anggota', 'value' => '5'],
+            ['key' => 'persen_non_anggota', 'value' => '0'],
+            ['key' => 'pph', 'value' => '10'],
+            ['key' => 'ppn', 'value' => '12'],
+        ];
+
+        Setting::insert($records);
     }
 }

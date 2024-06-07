@@ -20,6 +20,6 @@ class Setting extends Model
     protected $keyType = 'int';
     protected $guarded = ['id'];
 
-    public $timestamps = true;
+    public $timestamps = false;
     public $incrementing = true;
 }

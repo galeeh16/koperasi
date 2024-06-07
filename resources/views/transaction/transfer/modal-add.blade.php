@@ -20,7 +20,7 @@
             <x-input-select id="dari_kas" name="dari_kas" data-placeholder="Pilih Kas">
                 <option value=""></option>
                 @foreach ($data_kas as $kas)
-                    <option value="{{ $kas->id }}">{{ $kas->nama_kas }}</option>
+                    <option value="{{ $kas->id }}">{{ $akun->kode_aktiva }} - {{ $akun->nama_akun }}</option>
                 @endforeach
             </x-input-select>
         </div>
